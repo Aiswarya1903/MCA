@@ -148,6 +148,7 @@ void deletion(){
     }
 }
 
+//SEARCH
 void search(){
     int found=0;
     printf("enter the element to be searched:");
@@ -162,6 +163,8 @@ void search(){
         printf("%d is not found ",num);
         }
 }
+
+//REVERSE
 void reverse(){
     int i=0;
     int n=size-1;
@@ -174,7 +177,7 @@ void reverse(){
         n--;//moving backward
     }
 }
-
+//BUBBLE SORT
 void sort(){
     for(i=0;i<size;i++){
         for(int j=0;j<size-1;j++){
@@ -188,7 +191,7 @@ void sort(){
     printf("array sorted successfully!\n");
     display();
 }
-
+//DISPLAY
 void display(){
     if(size<=0)
     {

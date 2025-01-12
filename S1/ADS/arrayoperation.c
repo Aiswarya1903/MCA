@@ -8,23 +8,29 @@ void insertion();
 void deletion();
 void display();
 void search();
+void reverse();
+void sort();
 
 
 void main(){
     create();
-    while(ch!=5){
-        printf("\n---ARRAY OPERATIONS---\nenter the option\n1.insertion\n2.deletion\n3.search\n4.Display\n5.stop\n");
+    while(ch!=7){
+        printf("\n---ARRAY OPERATIONS---\nenter the option:\n1.Create\n2.Insertion\n3.Deletion\n4.Search\n5.Reverse\n6.sort\n7.exit");
         scanf("%d",&ch);
         switch(ch){
-            case 1:insertion();
+            case 1:create();
                 break;
-            case 2:deletion();
+            case 2:insertion();
                 break;
-            case 3:search();
+            case 3:deletion();
                 break;
-            case 4:display();
+            case 4:search();
                 break;
-            case 5:
+            case 5:reverse();
+                break;
+            case 6:sort();
+                break;
+            case 7:
                 printf("program stopped!");
                 break;
             default:
@@ -142,6 +148,7 @@ void deletion(){
     }
 }
 
+//SEARCH
 void search(){
     int found=0;
     printf("enter the element to be searched:");
@@ -157,6 +164,34 @@ void search(){
         }
 }
 
+//REVERSE
+void reverse(){
+    int i=0;
+    int n=size-1;
+    while(i<n){
+        //swapping
+        int temp=a[i];
+        a[i]=a[n];
+        a[n]=temp;
+        i++;//moving forward
+        n--;//moving backward
+    }
+}
+//BUBBLE SORT
+void sort(){
+    for(i=0;i<size;i++){
+        for(int j=0;j<size-1;j++){
+            if(a[j]>a[j+1]){
+                int temp=a[j];
+                a[j]=a[j+1];
+                a[j+1]=temp;
+            }
+        }
+    }
+    printf("array sorted successfully!\n");
+    display();
+}
+//DISPLAY
 void display(){
     if(size<=0)
     {

@@ -1,4 +1,5 @@
-'''question:1.read number of states from user.create a dictionary with state as keys and length of state as values.
+'''question:
+1.read number of states from user.create a dictionary with state as keys and length of state as values.
 2.sort the dictionary by length.
 3.write the dictionary into a csv file and read it'''
 
@@ -15,6 +16,7 @@ states.sort()
 dict2 = {state: len(state) for state in states}
 print(dict2)
 
+#sorting
 values=list(dict1.values())
 values.sort()
 

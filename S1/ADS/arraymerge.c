@@ -7,27 +7,29 @@ void main(){
     scanf("%d",&n);
     printf("enter the elements of the second array:");
     scanf("%d",&m);
-    int a[n],b[m],c[n+m],i,index=0;
+    
+    int a[n],b[m],c[n+m];
     printf("enter the elements of first array:\n");
-    for(i=0;i<n;i++){
+    for(int i=0;i<n;i++){
         printf("a[%d]=",i);
         scanf("%d",&a[i]);
     }
     printf("enter the elements of second array:\n");
-    for(i=0;i<m;i++){
+    for(int i=0;i<m;i++){
         printf("b[%d]=",i);
         scanf("%d",&b[i]);
     }
     //merged array
-    for(i=0;i<n;i++){
-        c[index++]=a[i];
+    int j=0;
+    for(int i=0;i<n;i++){
+        c[j++]=a[i];
     }
-    for(i=0;i<m;i++){//index is incremented 
-        c[index++]=b[i];
+    for(int i=0;i<m;i++){//index is incremented 
+        c[j++]=b[i];
     }
     //displaying merged elements using n+m 
     printf("the merged array elements are:");
-    for(i=0;i<n+m;i++){
-        printf("%d ",c[i]);
+    for(int i=0;i<n+m;i++){
+        printf("C[%d]=%d",i,c[i]);
     }
 }

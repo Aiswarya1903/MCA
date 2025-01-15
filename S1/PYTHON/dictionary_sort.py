@@ -1,4 +1,5 @@
-'''question:
+#sample lab question
+'''
 1.read number of states from user.create a dictionary with state as keys and length of state as values.
 2.sort the dictionary by length.
 3.write the dictionary into a csv file and read it'''

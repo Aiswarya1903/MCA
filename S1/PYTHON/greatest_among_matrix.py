@@ -1,3 +1,5 @@
+#sample lab question
+
 class location:
     def __init__(self,row,column):
         self.row=row

@@ -1,0 +1,8 @@
+create a car collection with name and price
+
+1.print all car names and their prices
+2.count and display the total number of cars in the collection
+3.calculate the sum of all volvo and audio cars
+4.print the names of cars whose price is greater than 50000
+5.display sorted documents by price in descending order
+6.display car details after skipping first 3 and then display the next 2 documents

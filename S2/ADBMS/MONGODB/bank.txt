@@ -1,0 +1,5 @@
+store details of some customers of a bank having (id,name(fname,lastname),address,phone number(some of them have multiple phonenumber
+aadhar no,branch))
+1.Display the full details of customers of "kallikad" branch
+2.update last name of person with a single phone number "789098723"
+3.display the names of customers staying "kallikkad"

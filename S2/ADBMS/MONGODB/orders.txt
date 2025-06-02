@@ -1,0 +1,14 @@
+create a collection of documents consisting of orders an order has an id,
+the year in which was it was issued,the cost,the items in the order and 
+the number of days it took to deliver the order and paid status 
+the cost is specified as price in a given currency.
+the order items consist of products.a product has an id colours(>1) and quantity,
+1.retrieve aall document in a collection
+2.retrieve all documents that contain orders whose price is less than 18 euro
+3.retrieve all documents with orders that contain product p2
+4.retrieve all documents with orders that contain product whose quantity is less than 10
+5.retrieve all documents that contain paid orders (the paid field is paid)
+6.retrive all documents tthat contain paid orders and the orders are from before 2022
+7.retrieve all documents that contain orders whose price is in USD.
+
+

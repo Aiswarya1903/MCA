@@ -1,0 +1,4 @@
+store details of some persons giving houses for rent having(id,name(fname,lname),
+address 2homes in 2 different streets(hname,street,city))
+1.display the full details of a customer "Aiswarya"
+2.update the house name in "chitali street" of "Aiswarya" as "love date"

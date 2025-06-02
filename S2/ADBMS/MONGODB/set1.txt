@@ -1,0 +1,54 @@
+
+Create a database named “exam” and create a collection named “student” into it. 
+1.	Insert the following document into the collection student(Using python code)
+_id=1
+Name=Anjali
+Place=Kollam
+Phone=8582639562
+Vaccination_status=”Both vaccinated”
+RTPCR=negative
+Lab_mark=Internal:30,External:45
+Department=MCA
+
+_id=2
+Name=Anuradha
+Place=Varkala
+Phone=9992639562
+Vaccination_status=”Both vaccinated”
+RTPCR=negative
+Lab_mark=Internal:40,External:48
+Department=Civil
+
+
+_id=3
+Name=Bismiya
+Place=Kollam
+Phone=9446639562
+Vaccination_status=”not vaccinated”
+RTPCR=positive
+Lab_mark=Internal:50,External:39
+Department=MCA
+
+_id=4
+Name=Vimal
+Place=Ernakulam
+Phone=8582639568
+Vaccination_status=”First dose only”
+RTPCR=positive
+Lab_mark=Internal:40,External:42
+Department=Civil  
+                                                                                                                   
+_id=5
+Name=Vivek
+Place=Kollam
+Phone=8582639777
+Vaccination_status=”Both vaccinated”
+RTPCR=negative
+Lab_mark=Internal:50,External:50
+Department=MCA
+2.	Write a NoSQL Query to display the name and phone number of students who are both  vaccinated
+3.	Write a NoSQL Query to display the name and phone number of top two students in MCA department(based on lab external mark)  
+4.	Write a NoSQL Query to update the vaccination status as ‘both vaccinated’ of the student whose id=4.
+5.	Write a NoSQL Query to display the number of students who are not vaccinated.
+6.	Write a NoSQL Query to display the name and phone number of students in MCA department in descending order of  lab external mark. 
+7.	Write a NoSQL Query to display the name and department of students whose name starts with ‘A’

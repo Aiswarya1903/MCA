@@ -7,6 +7,7 @@ create table book(
     author varchar(20),
     price int,
     copies_available int);
+
 insert into book values
 	(100,"ram c/o","sarath",300,100),
     (101,"malgudi","Rk narayan",270,50);
@@ -34,14 +35,14 @@ create table issue(
 insert into issue values
 	(1000,10,100,'2024-10-12','2024-10-15');
     
-#4.	Create a trigger on the Issue table that decrements copies_available in the corresponding Book record whenever a new issue is recorded.
+#Create a trigger on the Issue table that decrements copies_available in the corresponding Book record whenever a new issue is recorded.
 
 delimiter $$
 create trigger copies_available 
 after insert on issue
 for each row
 BEGIN
-	update book
+    update book
     set copies_available=copies_available-1
     where book_id=new.book_id;
 END $$

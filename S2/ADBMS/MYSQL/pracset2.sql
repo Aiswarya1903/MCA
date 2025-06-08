@@ -2,28 +2,28 @@ create database books;
 use books;
 
 create table book(
-	book_id int primary key,
+    book_id int primary key,
     title varchar(25),
     author varchar(20),
     price int,
     copies_available int);
 
 insert into book values
-	(100,"ram c/o","sarath",300,100),
+    (100,"ram c/o","sarath",300,100),
     (101,"malgudi","Rk narayan",270,50);
 
 create table member(
-	member_id int primary key,
+    member_id int primary key,
     name varchar(20),
     contact varchar(10),
     join_date date);
     
 insert into member values
-	(10,"Aishu",'9089786756','2023-12-19'),
+    (10,"Aishu",'9089786756','2023-12-19'),
     (11,"misira",'1232435465','2012-10-09');
 
 create table issue(
-	issue_id int,
+    issue_id int,
     member_id int,
     book_id int,
     issue_date date,
@@ -33,7 +33,7 @@ create table issue(
     foreign key(book_id) references book(book_id));
     
 insert into issue values
-	(1000,10,100,'2024-10-12','2024-10-15');
+    (1000,10,100,'2024-10-12','2024-10-15');
     
 #Create a trigger on the Issue table that decrements copies_available in the corresponding Book record whenever a new issue is recorded.
 

@@ -2,16 +2,16 @@ create database hotel;
 use hotel;
 
 create table hotel(
-	h_id int primary key,
+    h_id int primary key,
     h_name varchar(20),
     no_of_rooms int,
     rate int);
 insert into hotel values
-	(101,"paramount",14,1000),
+    (101,"paramount",14,1000),
     (102,"nandanam",10,800);
     
 create table guest(
-	g_id int primary key,
+    g_id int primary key,
     g_name varchar(25),
     address varchar(40),
     phone_no int,
@@ -20,11 +20,11 @@ create table guest(
     foreign key(h_id) references hotel(h_id));
 
 insert into guest values
-	(10,"Aishu","kuppakkad house kulavanmokku",9089786767,5,101),
+    (10,"Aishu","kuppakkad house kulavanmokku",9089786767,5,101),
     (11,"pookie","kallikkad house palakkad",8976564534,3,102);
     
 create table staff(
-	s_id int primary key,
+    s_id int primary key,
     s_name varchar(25),
     h_id int,
     salary int,
@@ -32,7 +32,7 @@ create table staff(
     foreign key(h_id) references hotel(h_id));
     
 insert into staff values
-	(1,"misi",101,1000,"cleaner"),
+    (1,"misi",101,1000,"cleaner"),
     (2,"chai",101,10000,"receptionist");
     
 #find the guest stayed in paramount hotel

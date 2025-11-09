@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customise">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="256dp"
+        android:text="Enter Pizza Size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/size"
+        android:layout_width="260dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="91dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="small(100)" />
+
+        <RadioButton
+            android:id="@+id/medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="medium(200)" />
+
+        <RadioButton
+            android:id="@+id/large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="large(300)" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="223dp"
+        android:text="Select your toppings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/size" />
+
+    <CheckBox
+        android:id="@+id/cheese"
+        android:layout_width="243dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="93dp"
+        android:text="cheese(+40)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <CheckBox
+        android:id="@+id/ketchup"
+        android:layout_width="243dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="93dp"
+        android:text="ketchup(+50)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cheese" />
+
+    <CheckBox
+        android:id="@+id/special"
+        android:layout_width="243dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="93dp"
+        android:text="special(+100)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ketchup" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="121dp"
+        android:text="submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/special" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

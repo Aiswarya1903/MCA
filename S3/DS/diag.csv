@@ -1,0 +1,5 @@
+Cough,sore,fever,diagno
+Y,N,Y,flu
+N,Y,Y,flu
+Y,N,N,cold
+N,N,N,healthy
